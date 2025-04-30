@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Carte Interactive - Mon Jeu</title>
+
+  <!-- Lien vers le fichier CSS externe -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  
+  <!-- Leaflet.draw CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw-src.css" />
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  
+  <!-- Leaflet.draw JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="bg-gray-100">
+  <header class="bg-indigo-600 text-white w-full py-6 shadow-md">
+    <nav class="max-w-7xl mx-auto px-4">
+      <ul class="flex space-x-8 justify-center items-center text-lg font-medium">
+         <!-- Lien vers la page Ajout map -->
+         <li><a href="index.html" class="hover:text-indigo-800 transition">Accueil</a></li>
+        <!-- Lien vers la page Ajout map -->
+        <li><a href="templates/insert.html.php" class="hover:text-indigo-800 transition">Ajouter une map</a></li>
+        <!-- Lien vers la page Suppression de Map -->
+        <li><a href="templates/deleteMap.html.php" class="hover:text-indigo-800 transition">Supprimer une map</a></li>
+        <!-- Lien vers la page Suppression de Zone -->
+        <li><a href="templates/deleteZone.html.php" class="hover:text-indigo-800 transition">Supprimer une zone</a></li>
+        <!-- Lien vers Infos (peut être modifié ou ajouté à une page d'infos) -->
+        <li><a href="templates/infos.html" class="hover:text-indigo-800 transition">Infos</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  <!-- Conteneur de la carte -->
+  <div id="map" class="flex mt-20"></div>
+
+  <!-- Bouton pour réinitialiser les marqueurs -->
+  <button id="resetButton" onclick="localStorage.removeItem('markers'), localStorage.removeItem('drawings'); location.reload();">
+    🔄 Réinitialiser les marqueurs
+  </button>
+
+  <!-- Lien vers le fichier JS -->
+  <script src="js/map.js"></script>
+  <script src="js/zone.js"></script>
+  <script src="js/draw.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* Style pour la carte */
+#map {
+    height: 70vh;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .leaflet-container {
+    background: #000;
+  }
+  
+  /* Style pour le bouton de réinitialisation */
+  #resetButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: #ececec;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+  
+  #resetButton:hover {
+    background: #a0a0a0;
+  }
+  
+  /* Style pour l'affichage des coordonnées de la souris */
+  .mouse-coordinates {
+    background-color: white;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  }
+  
+  /* Style de l'étiquette de la zone */
+  .leaflet-tooltip.zone-label {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0px 0px 0px black;
+    box-shadow: none;
+  }
+  
+  /* Effet de survol pour les objets interactifs sur la carte */
+  .leaflet-interactive {
+    transition: all 0.3s ease;  /* Transition fluide pour l'effet */
+  }
+  
+  /* Effet de hover sur un polygone, cercle, rectangle */
+  .leaflet-interactive:hover {
+    stroke: rgb(196, 161, 116) !important;  /* Change la couleur de la bordure */
+    fill: rgba(250, 215, 149, 0.856) !important;  /* Change la couleur de remplissage */
+    fill-opacity: 0.2;  /* Change la transparence du remplissage */
+  }
+  

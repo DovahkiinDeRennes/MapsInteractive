@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos de l'application</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen">
+  <header class="bg-gray-200 text-black w-full py-6 shadow-md">
+    <nav class="max-w-7xl mx-auto px-4">
+      <ul class="flex space-x-8 justify-center items-center text-lg font-medium">
+        <li><a href="../index.html" class="hover:text-indigo-800 transition">Accueil</a></li>
+        <li><a href="insert.html.php" class="hover:text-indigo-800 transition">Ajouter une map</a></li>
+        <li><a href="deleteMap.html.php" class="hover:text-indigo-800 transition">Supprimer une map</a></li>
+        <li><a href="deleteZone.html.php" class="hover:text-indigo-800 transition">Supprimer une zone</a></li>
+        <li><a href="infos.html" class="hover:text-indigo-800 transition">Infos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="max-w-3xl mx-auto mt-12 p-8 bg-white rounded-xl shadow-md">
+    <h1 class="text-3xl font-bold mb-6 text-center">À propos de l'application</h1>
+    <p class="text-lg leading-relaxed">
+      Cette application permet de créer des <span class="font-semibold">cartes interactives personnalisées</span> avec plusieurs fonctionnalités :
+    </p>
+    <ul class="list-disc list-inside mt-4 text-base space-y-2">
+      <li>Ajout de plusieurs couches sur une même map (ex : rez-de-chaussée, étage 1, étage 2, etc.)</li>
+      <li>Création de zones interactives et personnalisées</li>
+      <li>Ajout de marqueurs géolocalisés</li>
+      <li>Sauvegarde automatique des données en base MySQL</li>
+      <li>Gestion facile via les interfaces d'administration</li>
+    </ul>
+    <p class="mt-6">
+      Tout est conçu pour être simple, flexible et rapide à prendre en main.
+    </p>
+  </main>
+  <div class="mt-8 text-center">
+            <a href="index.html" class="text-indigo-600 hover:text-indigo-800">Retour</a>
+        </div>
+</body>
+</html>
